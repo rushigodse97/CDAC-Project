@@ -30,10 +30,10 @@ public class ProductController {
 	private String path;
 
 	@PostMapping("/uploadProduct")
-	public Product save(@RequestParam("productImage") MultipartFile productImage, @RequestBody Product product) {
+	public Product save(@RequestParam("productImage1") MultipartFile productImage1, @RequestBody Product product) {
 		Product p1=null;
 		try {
-			String fileName = this.productService.uploadProductImage(path, productImage);
+			String fileName = this.productService.uploadProductImage(path, productImage1);
 			product.setProductImage(fileName);
 			 p1=productService.UploadProduct(product);
 		} catch (IOException e) {

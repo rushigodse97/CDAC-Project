@@ -46,7 +46,7 @@ const Product = () => {
                     productImage1,
                     productDescription,
                     productPrice,
-                   productStatus,
+                    productStatus,
                     productQuantity,
                 },config1)
                 .then((response) => {
@@ -133,7 +133,6 @@ const Product = () => {
                         </div>
                     </div>
                 </div>
-
 
             </div>
         </div>
